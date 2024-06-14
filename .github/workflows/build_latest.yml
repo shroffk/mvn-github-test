@@ -21,4 +21,6 @@ jobs:
         java-version: '17'
         maven-version: '3.9.6'
     - name: Build
-      run: mvn --batch-mode install -DskipTests
+      run: > 
+        mvn --version
+        mvn --batch-mode install -DskipTests
